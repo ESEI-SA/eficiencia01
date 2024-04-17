@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Eficiencia Energética en campos de producción petrolera &#8212; Eficiencia Energética Petrolera</title>
+    <title>3. Bases de datos &#8212; Eficiencia Energética Petrolera</title>
   
   
   
@@ -57,10 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'N003_BasesDeDatos';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1. Compromisos" href="N001_Compromisos.html" />
+    <link rel="prev" title="2. Formalización" href="N002_Formalizacion.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +122,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -140,7 +138,7 @@
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -171,16 +169,16 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Eficiencia Energética en campos de producción petrolera
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="N001_Compromisos.html">1. Compromisos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="N002_Formalizacion.html">2. Formalización</a></li>
-<li class="toctree-l1"><a class="reference internal" href="N003_BasesDeDatos.html">3. Bases de datos</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Bases de datos</a></li>
 </ul>
 
     </div>
@@ -252,7 +250,7 @@
       
       
       
-      <li><a href="https://github.com/ESEI-SA/efciencia01/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ESEI-SA/efciencia01/issues/new?title=Issue%20on%20page%20%2FN003_BasesDeDatos.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -282,7 +280,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/N003_BasesDeDatos.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +290,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -353,7 +351,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -364,11 +364,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Eficiencia Energética en campos de producción petrolera</h1>
+    <h1>3. Bases de datos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-produccion-de-la-anh">3.1. Datos de producción de la ANH</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-los-pozos-por-sgc">3.2. Datos de los pozos por Sgc</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -378,16 +387,112 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="eficiencia-energetica-en-campos-de-produccion-petrolera">
-<h1>Eficiencia Energética en campos de producción petrolera<a class="headerlink" href="#eficiencia-energetica-en-campos-de-produccion-petrolera" title="Link to this heading">#</a></h1>
-<p>Este es el libro donde se registrarán las metodologías para desarrollar los proyectos de Eficiencia Energética en los campos de producción de petróleo y gas que operan en Colombia.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="N001_Compromisos.html">1. Compromisos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="N002_Formalizacion.html">2. Formalización</a></li>
-<li class="toctree-l1"><a class="reference internal" href="N003_BasesDeDatos.html">3. Bases de datos</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="bases-de-datos">
+<h1>3. Bases de datos<a class="headerlink" href="#bases-de-datos" title="Link to this heading">#</a></h1>
+<p>En este capítulo se procesará toda la información relacionada con las Bases de Datos que servirán de soporte para la ejecución de proyectos de gestión energética.</p>
+<section id="datos-de-produccion-de-la-anh">
+<h2>3.1. Datos de producción de la ANH<a class="headerlink" href="#datos-de-produccion-de-la-anh" title="Link to this heading">#</a></h2>
+<p>Aquí se consolida la información de producción mensual de petróleo y gas de los campos de Colombia.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Carga los paquetes.</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Archivos de ANH de producción de crudo y gas por día promedio mensual.</span>
+<span class="c1"># Falta actualizar con 2023 y 2024.</span>
+<span class="n">gas_2015_2023</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;parquet/gas_2015_2023.parquet.gzip&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gas_2015_2023</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># </span>
+<span class="n">archivoCrudo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;parquet/archivoCrudo.parquet.gzip&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">archivoCrudo</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ANIO MES   ANIO_MES DEPARTAMENTO MUNICIPIO                        OPERADOR  \
+0  2015   1 2015-01-01       TOLIMA      None   KAPPA RESOURCES COLOMBIA LTD.   
+1  2015   1 2015-01-01       BOYACA      None  MANSAROVAR ENERGY COLOMBIA LTD   
+
+     CAMPO         CONTRATO  CUENCA  PRODUCCIÓN FISCALIZADA  GAS LIFT  \
+0  ABANICO          ABANICO     NaN                   9.365       0.0   
+1   ABARCO  NARE ASOCIACION     NaN                   6.474       0.0   
+
+   GAS REINYECTADO  GAS QUEMADO  CONSUMO EN CAMPO  ENVIADO A PLANTA  \
+0              0.0        6.612             2.753               0.0   
+1              0.0        6.474             0.000               0.0   
+
+   GAS TRANSFORMADO  ENTREGADO A GASEODUCTO  
+0               0.0                     0.0  
+1               0.0                     0.0  
+   anio Departamento      Municipio                        Operadora    Campo  \
+0  2013       TOLIMA        ESPINAL           PACIFIC STRATUS ENERGY  ABANICO   
+1  2013       BOYACÁ  PUERTO BOYACA  MANSAROVAR ENERGY COLOMBIA LTD.   ABARCO   
+2  2013     CASANARE         OROCUE                     C&amp;C ENERGÍA    ABEDUS   
+
+     Contrato        enero      febrero        marzo        abril  \
+0     ABANICO  1220.709677  1258.892857  1248.903226  1220.833333   
+1        NARE  5027.193548  5051.250000  5700.419355  5654.400000   
+2  CRAVOVIEJO     0.000000     0.000000     0.000000    33.666667   
+
+          mayo        junio        julio       agosto   septiembre  \
+0  1194.677419  1112.800000  1014.354839   995.258065  1014.600000   
+1  5240.032258  5066.300000  5580.645161  5647.935484  5562.066667   
+2     3.903226     0.233333     5.064516    19.000000     0.000000   
+
+       octubre    noviembre    diciembre  
+0  1142.322581  1148.100000  1160.096774  
+1  5959.612903  6533.966667  6279.419355  
+2     0.000000     0.000000     0.000000  
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="datos-de-los-pozos-por-sgc">
+<h2>3.2. Datos de los pozos por Sgc<a class="headerlink" href="#datos-de-los-pozos-por-sgc" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lee los datos de pozos Sgc en archivo Excel.</span>
+<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="s2">&quot;sgc/pozosSgc1.xlsx&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">reader</span><span class="p">:</span>
+    <span class="n">pozosSgc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">reader</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="s2">&quot;A:R&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">pozosSgc</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># ******************************************************************************</span>
+<span class="c1"># Salva.</span>
+<span class="c1"># pozosSgc.to_parquet(&#39;parquet/pozosSgc.parquet.gzip&#39;, compression=&#39;gzip&#39;)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                  X                Y FID        UWI    WELL_NAME WELL_COUNT  \
+0  -829497179478978  680570235120374   1   PALA0289  PALAGUA-289   COLOMBIA   
+1  -833779145418999  468532667055198   2  ABAN0003H   ABANICO-3H   COLOMBIA   
+
+  DEPARTAMEN     WELL_COU_1 FIELD_ABRE                    GEOLOGIC_P CONTRATO  \
+0     BOYACA  PUERTO BOYACA    PALAGUA     VALLE MEDIO DEL MAGDALENA  PALAGUA   
+1     TOLIMA        ESPINAL    ABANICO  VALLE SUPERIOR DEL MAGDALENA  ABANICO   
+
+    WELL_LONGI WELL_LATIT WELL_CLA_1  WELL_STA_1     WELLTYPE  \
+0  -7451499945    6102098         A0   PRODUCTOR  DIRECCIONAL   
+1  -7489965499  420512028         A1  SIN ESTADO   HORIZONTAL   
+
+                              OPERATOR_W  \
+0                     UNION TEMPORAL IJP   
+1  EXPLOTACIONES CMS OIL AND GAS COMPANY   
+
+                                         COMPANY_CO  
+0                                UNION TEMPORAL IJP  
+1  FRONTERA ENERGY COLOMBIA CORP. SUCURSAL COLOMBIA  
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -420,14 +525,14 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="N001_Compromisos.html"
-       title="next page">
+    <a class="left-prev"
+       href="N002_Formalizacion.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1. Compromisos</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2. Formalización</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -436,7 +541,21 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-produccion-de-la-anh">3.1. Datos de producción de la ANH</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-de-los-pozos-por-sgc">3.2. Datos de los pozos por Sgc</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
